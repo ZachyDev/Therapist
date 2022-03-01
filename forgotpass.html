@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Forgot password</title>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+<div class="screen-1">
+  <h1 style="color: #3e4684;font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 20px;">Forgot password</h1>
+    <g transform="matrix(0.16 -0.12 0.49 0.66 290.57 243.57)">
+      <polygon style="stroke: rgb(0,0,0); stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" points="-50,-50 -50,50 50,50 50,-50 "></polygon>
+    </g>
+    <g transform="matrix(0.16 0.1 -0.44 0.69 342.03 248.34)"> 
+      <polygon style="stroke: rgb(0,0,0); stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke" points="-50,-50 -50,50 50,50 50,-50 "></polygon>
+    </g>
+  </svg>
+  <div class="email">
+    <label for="email">Email Address</label>
+    <div class="sec-2">
+      <ion-icon name="mail-outline"></ion-icon>
+      <input type="email" id="email" name="email" placeholder="Username@gmail.com"/>
+    </div>
+  </div>
+  <button class="login" id="resetPass">Reset Password</button>
+</div>
+<!-- partial -->  
+ <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase.js"></script>
+<!-- <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script> -->
+<!-- TODO: Add SDKs for Firebclase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyA81fq2bHjctsjfUXd2i64b3AG1tVioSTU",
+    authDomain: "therapist-connect.firebaseapp.com",
+    projectId: "therapist-connect",
+    storageBucket: "therapist-connect.appspot.com",
+    messagingSenderId: "308490251184",
+    appId: "1:308490251184:web:57251778e09fe87b164475"
+  };
+
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+  <script src="js/forgotpass.js"></script>
+</body>
+</html>
