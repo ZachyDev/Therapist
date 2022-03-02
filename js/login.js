@@ -1,6 +1,7 @@
-
+const loginBtn = document.getElementById('loginBtn');
 let userName = document.getElementById('user-link');
-userName.innerHTML = 'test100'
+
+// userName.innerHTML = 'test100'
 loginBtn.addEventListener('click', () => {
     let email = document.getElementById('email').value;
     let pass = document.getElementById('pass').value;
@@ -10,7 +11,7 @@ loginBtn.addEventListener('click', () => {
                 // const user = firebase.auth().currentUser;
                  console.log(result.user.displayName)
                  window.alert('Login successful, redirecting...');
-                 window.location.assign('therapist-addmin/index.html');
+                 window.location.assign('therapist-admin/index.html');
                 
                 
             })
@@ -30,3 +31,4 @@ googleBtn.addEventListener('click',() => {
             window.location.assign('home.html');
         })
 })
+

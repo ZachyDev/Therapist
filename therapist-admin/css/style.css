@@ -52,6 +52,7 @@ input {
 }
 body {
   background-color: #f0f8fd;
+  overflow-x: hidden;
 }
 
 button:not(:disabled),
@@ -545,4 +546,10 @@ label {
   .therapist-nav .icons.right {
     right: -33%;
   }
+}
+
+
+#logoutDiv{
+  font-size: 15px;
+  margin-right:50px ;
 }
