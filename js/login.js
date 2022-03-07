@@ -1,6 +1,6 @@
 const loginBtn = document.getElementById('loginBtn');
-let userName = document.getElementById('user-link');
 
+let userName = document.getElementById('user-link');
 // userName.innerHTML = 'test100'
 loginBtn.addEventListener('click', () => {
     let email = document.getElementById('email').value;
@@ -8,14 +8,18 @@ loginBtn.addEventListener('click', () => {
     if( email && pass ) {
         firebase.auth().signInWithEmailAndPassword(email,pass)
             .then((result) =>{
-                // const user = firebase.auth().currentUser;
-                 console.log(result.user.displayName)
-                 window.alert('Login successful, redirecting...');
-                 window.location.assign('therapist-admin/index.html');
                 
-                
+                 if ( result.user.emailVerified ) {
+                    window.alert('Login successful, redirecting...');
+                    console.log(result.user)
+                    window.location.assign('therapist-admin/index.html');
+                 }
+                 else {
+                     alert(`The email ${ result.user.email } is not verified`);
+                 }
             })
             .catch(err => alert(err.message));
+            
     }
     else {
         window.alert('Both fields are required');
@@ -31,4 +35,3 @@ googleBtn.addEventListener('click',() => {
             window.location.assign('home.html');
         })
 })
-
