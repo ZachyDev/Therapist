@@ -358,6 +358,10 @@ button {
   background: var(--cyan);
   color: var(--white);
 }
+.bg-orange {
+  background: rgb(209, 142, 19);
+  color: var(--white);
+}
 .bg-ash {
   background: var(--ash);
   color: var(--white);
