@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Book Appointment</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="../therapist-admin/css/create-therapist.css">
+  </head>
+  <body>
+    <div class="main-block">
+      <h1>Book Appointment</h1>
+      <form id="bookAppointment">
+        <hr>
+        <label id="icon" for="name"><i class="fas fa-user"></i></label>
+        <input type="text" name="name"  placeholder="Full Name" required/>
+        <label id="icon" for="email"><i class="fas fa-envelope"></i></label>
+        <input type="text" name="email"  placeholder="Email" required/>
+        <label id="icon" for="service"><i class="fas fa-info-circle"></i></label>
+        <input type="text" name="service"  placeholder="Service" required/>
+        <label id="icon" for="date"><i class="fas fa-calendar-plus"></i></label>
+        <input type="date" name="date"  placeholder="Pick Date" required/>
+        <label id="icon" for="phone"><i class="fas fa-phone"></i></label>
+        <input type="text" name="phone"  placeholder="Phone Number" required/>
+        <label id="icon" for="therapistName"><i class="fas fa-user"></i></label>
+        <select value="Select Therapist" id="selectTherapist" name="therapistSelect">
+            
+        </select>
+        
+        <hr>
+    
+        <div class="btn-block">
+         
+          <button type="submit" href="/">Submit</button>
+        </div>
+      </form>
+    </div>
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyA81fq2bHjctsjfUXd2i64b3AG1tVioSTU",
+        authDomain: "therapist-connect.firebaseapp.com",
+        projectId: "therapist-connect",
+        storageBucket: "therapist-connect.appspot.com",
+        messagingSenderId: "308490251184",
+        appId: "1:308490251184:web:57251778e09fe87b164475"
+      };
+    
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="./js/select-therapist.js"></script>
+  </body>
+</html>
