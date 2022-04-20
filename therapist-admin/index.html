@@ -22,14 +22,7 @@
             </a>
           </div>
 
-          
-          <div class="icons right">
-            <a href="#" class="nav-item">
-              <div class="badge"><span>5</span></div>
-              <i class="far fa-bell"></i>
-            </a>
-            <a href="#" class="nav-item"><i class="far fa-envelope"></i></a>
-          </div>
+           
           <div class="user" id="user">
             <a href="#" id="user-link"></a>
             <!-- <p class="user-link"></p> -->
@@ -89,7 +82,7 @@
             
             <div class="dropdown">
               <section class="create-client">
-                <button><i class="fas fa-plus"></i>Create client</button>
+                <button id="create-therapist"><i class="fas fa-plus"></i>Create Therapist</button>
               </section>
             </div>
           </article>
@@ -136,6 +129,10 @@
 
     </div>
     <script>
+      let createTherapist = document.getElementById('create-therapist');
+      createTherapist.addEventListener('click', () => {
+        window.location.assign('create-therapist.html');
+      })
       const menuLinks = document.querySelectorAll(".sidebar .menu a");
 
       for (const link of menuLinks) {

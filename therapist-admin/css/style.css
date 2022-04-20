@@ -422,9 +422,10 @@ button {
 }
 .create-client button {
   margin-left: auto;
-  background: #89c34a;
+  background: #00b9eb;
   border-radius: 0.5rem;
   color: var(--white);
+  margin-bottom: 20px;
 }
 .create-client button i {
   margin-right: 0.5rem;
