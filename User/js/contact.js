@@ -9,7 +9,7 @@ contactForm.addEventListener("submit", e => {
     let subject = document.getElementById('subject').value;
     let message = document.getElementById('message').value;
 
-    // push to db
+    
     db.collection('inquiries').add({
         fName,
         email,
