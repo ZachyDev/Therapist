@@ -77,62 +77,25 @@
         <section class="page-content">
           <article class="header">
             <div class="info">
-              <p><span style="font-size: 18px;">THERAPIST NAME</span></p>
+              <p><span style="font-size: 18px;">View Inquiries</span></p>
             </div>
             
-            <div class="dropdown">
-              <section class="create-client">
-                <button id="create-therapist"><i class="fas fa-plus"></i>Create Therapist</button>
-              </section>
-            </div>
+         
           </article>
           <article class="board">
-            <p>Clients</p>
+            <p>Client Inquiries</p>
             <section class="boxes">
-    
-              <div class="box bg-purple">
-                <p>Articles</p>
-                <div class="icon-value">
-                  <div class="icon">
-                    <i class="fa fa-book"></i>
-                  </div>
-                  <p class="value" id="numberOfArticles"></p>
-                </div>
-              </div>
-              <div class="box bg-cyan">
-                <p>Appointments</p>
-                <div class="icon-value">
-                  <div class="icon"><i class="fa fa-calendar"></i></div>
-                  <p class="value" id="appointments"></p>
-                </div>
-              </div>
-              
-              <div class="box bg-pale">
-                <p>Newsletters</p>
-                <div class="icon-value">
-                  <div class="icon">
-                    <i class="fas fa-users"></i>
-                  </div>                  <p class="value">0</p>
-                </div>
-              </div>
-              
-            </section>
-            <div class="container" style="padding:20px;height: 125vh;width: 750px;">
-              <canvas id="myChart"></canvas>
-              
-          </div>
-          
-          </article>
+                <ul id="inquiries" style="font-size: 13px;">
+                    
+                </ul>
+             
         </section>
        
       </main>
 
     </div>
     <script>
-      let createTherapist = document.getElementById('create-therapist');
-      createTherapist.addEventListener('click', () => {
-        window.location.assign('create-therapist.html');
-      })
+
       const menuLinks = document.querySelectorAll(".sidebar .menu a");
 
       for (const link of menuLinks) {
@@ -166,8 +129,7 @@
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
 </script>
-    <script src="./js/appointments.js"></script>
-    <script src="./articles/fetchArticle.js"></script>
-    <script src="./js/graph.js"></script>
+<script src="./js/inquiries.js"></script>
+  
   </body>
 </html>

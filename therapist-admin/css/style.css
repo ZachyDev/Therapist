@@ -558,3 +558,13 @@ label {
   font-size: 15px;
   margin-right:50px ;
 }
+#inquiries {
+  width: 700px;
+}
+#inquiries li {
+  border: 1.5px solid rgb(15, 88, 197);
+  border-radius: 9px;
+  margin: 15px;
+  width: 100%;
+  padding: 20px;
+}
