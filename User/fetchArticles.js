@@ -1,6 +1,8 @@
 const firestore_db = firebase.firestore();
 const article_section = document.getElementById('article_section');
 const article_list = document.getElementById('article_list');
+const articleClass = document.getElementsByClassName('episode')[0];
+const episodeContent = document.getElementById("episode__content");
 
 fetchArticles();
 
@@ -13,6 +15,7 @@ function populateArticles(doc) {
 
 	const article_item = document.createElement('li');
 	const title = document.createElement('h4');
+	title.classList.add('title');
 	const content = document.createElement('p');
 	const author = document.createElement('strong');
 	const publicationDate = document.createElement('i');
@@ -21,12 +24,15 @@ function populateArticles(doc) {
 	content.textContent = article_content;
 	author.textContent = article_author;
 	publicationDate.textContent = publication_date;
+	article_item.appendChild(title)
 
-	article_item.appendChild(title);
+	articleClass.appendChild(episodeContent);
 	article_item.appendChild(content);
 	article_item.appendChild(author);
 	article_item.appendChild(publicationDate);
 	article_list.appendChild(article_item);
+	episodeContent.appendChild(article_list);
+	articleClass.appendChild(episodeContent)
 
 }
 

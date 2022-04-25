@@ -270,31 +270,27 @@
           </div>
 
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form id="contact">
               <div class="row">
                 <div class="form-group col-md-6">
                   <label for="name">Your Name</label>
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                  <input type="text" class="form-control" id="fName" placeholder="Your Name" required>
                 </div>
                 <div class="form-group col-md-6 mt-3 mt-md-0">
                   <label for="name">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                  <input type="email" class="form-control"  id="email" placeholder="Your Email" required>
                 </div>
               </div>
               <div class="form-group mt-3">
                 <label for="name">Subject</label>
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                <input type="text" class="form-control"  id="subject" placeholder="Subject" required>
               </div>
               <div class="form-group mt-3">
                 <label for="name">Message</label>
-                <textarea class="form-control" name="message" rows="10" required></textarea>
+                <textarea class="form-control" id="message" rows="10" required></textarea>
               </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              </div><br>
+              <div class="text-center"><button type="submit"  class="btn btn-secondary">Send Message</button></div>
             </form>
           </div>
 
@@ -311,13 +307,7 @@
     <div class="footer-newsletter">
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-lg-6">
-            <h4>Join Our Newsletter</h4>
-            <p>Subscribe to our newsletter to receive our weekly updates</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
-          </div>
+         
         </div>
       </div>
     </div>
@@ -378,6 +368,25 @@
   </footer><!-- End Footer -->
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase.js"></script>
+  <!-- <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script> -->
+  <!-- TODO: Add SDKs for Firebclase products that you want to use
+       https://firebase.google.com/docs/web/setup#available-libraries -->
+  
+  <script>
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyA81fq2bHjctsjfUXd2i64b3AG1tVioSTU",
+      authDomain: "therapist-connect.firebaseapp.com",
+      projectId: "therapist-connect",
+      storageBucket: "therapist-connect.appspot.com",
+      messagingSenderId: "308490251184",
+      appId: "1:308490251184:web:57251778e09fe87b164475"
+    };
+  
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
 
   <!-- Vendor JS Files -->
   <script src="vendor/aos/aos.js"></script>
@@ -389,6 +398,7 @@
 
   <!-- Template Main JS File -->
   <script src="js/main.js"></script>
+  <script src="./js/contact.js"></script>
 
 </body>
 
