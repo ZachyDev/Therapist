@@ -568,3 +568,21 @@ label {
   width: 100%;
   padding: 20px;
 }
+
+#article_list li {
+  border: 2px solid rgb(0, 128, 255);
+} 
+
+#appointments {
+  width: 700px;
+}
+
+#appointments li{
+  border: 1.5px solid rgb(15, 88, 197);
+  border-radius: 9px;
+  margin: 15px;
+  width: 100%;
+  padding: 25px;
+  line-height: 21px;
+  letter-spacing: 0.5px;
+}

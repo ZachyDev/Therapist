@@ -1,152 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Therapist Portal</title>
-    <script src="https://kit.fontawesome.com/39a25476ae.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script> 
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
-    <link rel="stylesheet" href="css/all.css" />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <div class="container">
-      <header>
-        <!-- Therapist Portal navigation -->
-        <nav class="therapist-nav">
-          <div class="logo">
-            <a href="index.html" class="active nav-item">
-              <img src="images/logo.png" alt="Therapist" />
-            </a>
-          </div>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Admin</title>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap'><link rel="stylesheet" href="./style.css">
 
-           
-          <div class="user" id="user">
-            <a href="#" id="user-link"></a>
-            <!-- <p class="user-link"></p> -->
-            <div class="user-img-wrapper">
-              <img src="images/useravatar.png" alt="User 1" />
-              <ul id="logoutDiv">
-                <li><a href="#" id="logoutUser">Logout</a></li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-        <!-- end of feeds navigation -->
-      </header>
-      <main class="main">
-        <section class="sidebar">
-          <h3 style="font-size: 19px;">THERAPIST PORTAL</h3>
-          <ul class="menu">
-            <li>
-              <a href="#" title="Home" class="active" >
-                <i class="fas fa-home"></i>
-                <span>Home</span>
-              </a>
-            </li>
-            <li>
-              <a href="#" title="Dashboard">
-                <i class="fa fa-calendar"></i>
-                <span>Appointments</span>
-              </a>
-            </li>
-            <li>
-              <a href="#" title="articles" id="newArticleBtn">
-                <i class="fa fa-book"></i>
-                <span>Publish Articles</span>
-              </a>
-            </li>
-            <li>
-              <a href="view-inquiries.html" title="Clients">
-                <i class="fa fa-book"></i>
-                <span>View Inquiries</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fa fa-sign-out"></i>
-                <span>Logout</span>
-              </a>
-            </li>
-            
-            
-          </ul>
-        </section>
-        <section class="page-content">
-          <article class="header">
-            <div class="info">
-              <p><span style="font-size: 18px;">THERAPIST NAME</span></p>
-            </div>
-            
-            <div class="dropdown">
-              <section class="create-client">
-                <button id="create-therapist"><i class="fas fa-plus"></i>Create Therapist</button>
-              </section>
-            </div>
-          </article>
-          <article class="board">
-            <p>Clients</p>
-            <section class="boxes">
-    
-              <div class="box bg-purple">
-                <p>Articles</p>
-                <div class="icon-value">
-                  <div class="icon">
-                    <i class="fa fa-book"></i>
-                  </div>
-                  <p class="value" id="numberOfArticles"></p>
-                </div>
-              </div>
-              <div class="box bg-cyan">
-                <p>Appointments</p>
-                <div class="icon-value">
-                  <div class="icon"><i class="fa fa-calendar"></i></div>
-                  <p class="value" id="appointments"></p>
-                </div>
-              </div>
-              
-              <div class="box bg-pale">
-                <p>Newsletters</p>
-                <div class="icon-value">
-                  <div class="icon">
-                    <i class="fas fa-users"></i>
-                  </div>                  <p class="value">0</p>
-                </div>
-              </div>
-              
-            </section>
-            <div class="container" style="padding:20px;height: 125vh;width: 750px;">
-              <canvas id="myChart"></canvas>
-              
-          </div>
-          
-          </article>
-        </section>
-       
-      </main>
+</head>
+<body>
 
+<div class="screen-1">
+  <h1 style="color: #3e4684;font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 20px;">Admin Login</h1>
+    <g transform="matrix(0.16 -0.12 0.49 0.66 290.57 243.57)">
+      <polygon style="stroke: rgb(0,0,0); stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" points="-50,-50 -50,50 50,50 50,-50 "></polygon>
+    </g>
+    <g transform="matrix(0.16 0.1 -0.44 0.69 342.03 248.34)">
+      <polygon style="stroke: rgb(0,0,0); stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke" points="-50,-50 -50,50 50,50 50,-50 "></polygon>
+    </g>
+  </svg>
+  <div class="email">
+    <label for="email">Email Address</label>
+    <div class="sec-2">
+      <ion-icon name="mail-outline"></ion-icon>
+      <input type="email" id="email" name="email" placeholder="Username@gmail.com"/>
     </div>
-    <script>
-      let createTherapist = document.getElementById('create-therapist');
-      createTherapist.addEventListener('click', () => {
-        window.location.assign('create-therapist.html');
-      })
-      const menuLinks = document.querySelectorAll(".sidebar .menu a");
-
-      for (const link of menuLinks) {
-        link.addEventListener("mouseenter", function () {
-          if (window.matchMedia("(max-width: 626px)").matches) {
-            const tooltip = this.querySelector("span").textContent;
-            this.setAttribute("title", tooltip);
-          } else {
-            this.removeAttribute("title");
-          }
-        });
-      }
-    </script>
-<!-- The core Firebase JS SDK is always required and must be listed first -->
+  </div>
+  <div class="password">
+    <label for="password">Password</label>
+    <div class="sec-2">
+      <ion-icon name="lock-closed-outline"></ion-icon>
+      <input class="pas" type="password" id="pass" name="password" placeholder="············"/>
+      <ion-icon class="show-hide" name="eye-outline"></ion-icon>
+    </div>
+  </div>
+  <button class="login" id="loginBtn">Login </button>
+  <div class="footer"><span><a href="register.html">Signup</a></span> 
+</div>
+<!-- partial -->  
+ <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase.js"></script>
 <!-- <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script> -->
 <!-- TODO: Add SDKs for Firebclase products that you want to use
@@ -166,8 +58,7 @@
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
 </script>
-    <script src="./js/appointments.js"></script>
-    <script src="./articles/fetchArticle.js"></script>
-    <script src="./js/graph.js"></script>
-  </body>
+  <script src="./js/login.js"></script> 
+  <script src="js/verifyEmail.js"></script>
+</body>
 </html>
